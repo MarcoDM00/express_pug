@@ -1,0 +1,13 @@
+html
+ head
+  title Patenti
+ body(style='text-align: center;')
+  h1(style='text-align: center; font-size: 50px; margin-top: 0;') #{titolo}
+  p(style='text-align: left;') #{sottotitolo}
+  each p of patenti
+   div(style='border: 1px black solid; margin-bottom: 20px;')
+    h5(style='font-size: 20px;') #{p.nome}
+    | Descrizione:
+    p #{p.descrizione}
+  a(href=`/`, style='text-decoration: underline; font-size: 30px; color: black;') Home
+  

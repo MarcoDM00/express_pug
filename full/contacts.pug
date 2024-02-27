@@ -1,0 +1,11 @@
+html
+ head
+  title Contatti
+ body
+  h1(style='text-align: center; font-size: 50px; margin-top: 0;') #{titolo}
+  each v in values
+   h3
+    | #{v.nome}: 
+    code #{v.valore}
+  a(href=`/`, style='text-decoration: underline; font-size: 30px; color: black;') Home
+  

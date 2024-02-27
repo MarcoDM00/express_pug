@@ -1,0 +1,15 @@
+html
+ head
+  title esercitazione_pug
+ body
+  h1(style='text-align: center; font-size: 50px; margin-top: 0;') #{titolo}
+  p #{sottotitolo}
+  p I nostri servizi:
+  ul
+   each item in servizi
+    li #{item}
+  p Altre sezioni:
+  each l in links
+   a(href=`${l.link}`, style='text-decoration: underline; font-size: 30px; color: black;') #{l.nome}
+   br
+   br
